@@ -1,0 +1,136 @@
+.body_wrap {display: flex; width: 100%; justify-content: center; align-items: center; height: 100vh; background-image: var(--body_bd); background-blend-mode: color-dodge; background-size: cover; background-repeat: no-repeat; background-position: top right; }
+.f_inner {position: relative; } 
+.f_inner i {position: absolute; left: 15px; top: 15px; cursor: pointer; color: #c9c9c9; }
+.myEyeIcon {right: 15px !important; left: unset !important; }
+
+
+.main_clm {background-color: var(--clm_bg); padding: 5% 5%; border-radius: 15px; box-shadow: var(--shadow); position: relative; overflow: hidden; }
+.newsletter input {width: 100%; background-color: var(--white); border: none; height: 45px; padding: 20px !important; font-size: 14px; outline: none !important; border-radius: 7px; box-shadow: 0px 0px 10px 0px #0000001a; }
+.newsletter {position: relative; }
+button.submit {border: none; background-image: var(--gradient); position: absolute; right: 0; top: 0; bottom: 0; border-radius: 0px 10px 10px 0px; padding: 10px 20px; cursor: pointer !important; /* background-color: #00408c; */ }
+button.submit  img {width: 18px; }
+
+.setp_wrap h3 {margin: 0; text-transform: none;}
+
+
+ul.set_btn {position: absolute; width: 100%; padding: 0; display: flex; text-align: center; left: 0; bottom: 0; }
+ul.set_btn li {display: inline-block; margin: 0px 0px; width: 100%; margin-right: 1px; }
+ul.set_btn   li a {display: inline-block; background-image: var(--gradient) !important; width: 100%; color: var(--white); padding: 12px 0px; }
+ul.set_btn li:last-child {margin: 0; }
+
+ol.fields_wrap {padding: 0 0 0 16px;font-size: 17px;font-weight: 600;}
+ol.fields_wrap li p {font-size: 14px; margin: 0; font-weight: 400; }
+
+/*******************QUIZ RADIO*/
+.quiz_radio {display: block;position: relative;padding-left: 35px;margin-bottom: 7px;cursor: pointer;it-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;text-align: left;color: #000;font-size: 17px;line-height: 30px;}
+.quiz_radio input {position: absolute; opacity: 0; cursor: pointer; }
+.quiz_mark {position: absolute;top: 5px;left: 0;height: 20px;width: 20px;background-color: #eee;border-radius: 50%;transition: .5s;border: 1px solid;}
+.quiz_radio:hover input ~ .quiz_mark {background-color: #ccc; } 
+.quiz_radio input:checked ~ .quiz_mark {background-color: var(--theme_color); }
+.quiz_mark:after {content: ""; position: absolute; display: none; }
+.quiz_radio input:checked ~ .quiz_mark:after {display: block; }
+.quiz_radio .quiz_mark:after {top: 0px;left: 0px;width: 18px;height: 18px;border-radius: 50%;background: white;/* content: url(../images/ok.png); */position: absolute;transition: .5s;filter: brightness(0);transform: scale(0.7);}
+/*******************QUIZ RADIO*/
+
+
+
+/*******************QUIZ CSS*/
+.progess_bar_wrap {display: inline-block;width: 100%;border: 1px solid #00000040;border-radius: 30px;overflow: hidden;height: 25px;position: relative;}
+.progess_bar_wrap .progess_bar {width: 10%;background-image: var(--gradient);height: 23px;margin: 0 !important;transition: .5s;border-radius: 30px;}
+.mySet {position: absolute; width: 100%; top: 25px; opacity: 0; /* transition: .5s; */ pointer-events: none; }
+.setp_wrap {position: relative; transition: .6s; }
+.active_tab {opacity: 1 !important; pointer-events: all !important; top: 0; transition: .5s; }
+.last_step {background-image: url(https://codingisfun.hosting167534.a2fdf.netcup.net/wp-content/uploads/2022/01/ezgif.com-gif-maker-1.gif); /*padding: 60px 20px;*/ }
+.Stepp10 {height: 360px !important; overflow-y: scroll; overflow-x: hidden; }
+.step_10 {padding-right: 20px; }
+/*******************QUIZ CSS*/
+
+/*******************CALCULATER CSS*/
+input.cal_btn {
+    width: 40px;
+    padding: 0 !important;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+input.eql_btn{
+    width: 40px;
+    padding: 0 !important;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;    
+}
+input.cal_btn:focus,input.eql_btn:focus {
+    outline: none !important;
+    border: 1px solid #3333338f;
+}
+.cal-body {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.cal-body .screen_box input.screen:focus{
+    outline: none !important;
+}
+.cal-body {
+    width: 600px;
+    /* background-color: #ffffff78; */
+    text-align: center;
+    padding: 20px 0px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 13px 0px #000000ad;
+    backdrop-filter: blur(5px);
+    display: none;
+}
+.cal-body .cal_paid {
+    margin: auto;
+    display: table;
+}
+.cal-body .screen_box input.screen {
+    width: 257px;
+    margin: 0px 0px 10px 0px;
+    height: 36px;
+    border-radius: 10px;
+    background-color: #717e62;
+    font-size: 35px;
+        font-family: Quantico;
+}
+.calclose_btn {
+    position: absolute;
+    right: -20px;
+    top: 0;
+    background-color: #efefef;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-family: cursive;
+    border-radius: 50%;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0px 0px 13px 0px #000000ad;
+}
+.open_cal {
+    display: block !important;
+}
+/*******************CALCULATER CSS*/
+
+@media(max-width:  480px){
+    .setp_wrap {margin-bottom: 40px !important; }
+}
+@media(max-width:  414px){
+    .setp_wrap {margin-bottom: 90px !important; }
+    ul.set_btn {display: inline-block; }
+    ul.set_btn li {margin-bottom: 2px; }
+}
+
+
+/**************************POPUP CSS*/
+.paypopup {position: fixed; z-index: -1; background-color: #000000a3; left: 0; right: 0; top: 0; bottom: 0; display: inline-grid; align-items: center; transition: .5s !important; opacity: 0; }
+.poppup_box {width: 30%; margin: auto; display: table; padding: 2%; border-radius: 10px; background-color: #fff; border: 10px solid #fff; position: relative; transition: .5s !important; transform: scale(0); opacity: 1; }
+.pop_close {position: absolute; right: 0; top: 0; width: 40px; height: 40px; text-align: center; font-size: 20px; color: #000; border-radius: 50%; line-height: 37px; cursor: pointer; font-family: cursive; }
+.pop_close:before {content: "x"; width: 40px; height: 40px; background-color: #2f83de; border-radius: 50%; position: absolute; left: 0; right: 0; top: 0; bottom: 0; transition: .5s !important; z-index: 9999; transform: scale(0); }
+.pop_close:hover:before {transform: scale(1); color: #fff; }
+/**************************POPUP CSS*/
+
